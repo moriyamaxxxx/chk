@@ -1,4 +1,5 @@
 <!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. -->
+<ons-navigator var="myNavigator" >
 <div class="navigation-bar">
   <div class="navigation-bar__left">
     <span class="toolbar-button--outline navigation-bar__line-height">
@@ -40,9 +41,9 @@
 </ul>
 </div>
 <div style="text-align: center">
-<button class="button button--outline">次へ</button>
-<button class="button button--outline">戻る</button>
-
-<ons-back-button>Back</ons-back-button>
-
+    <ons-button 
+        ng-click="myNavigator.popPage()">
+        戻る
+    </ons-button>
 </div>
+</ons-navigator>
