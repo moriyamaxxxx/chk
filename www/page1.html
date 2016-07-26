@@ -1,0 +1,37 @@
+<ons-toolbar>
+    <div class="center">検索</div>
+</ons-toolbar>
+
+
+    <div style="text-align: center">
+        <input type="search" value="" placeholder="検索ワード" class="search-input" >
+    </div>
+    <div style="text-align: right">
+        <ons-button 
+            ng-click="myNavigator.pushPage('new_page.html')">
+            検索
+        </ons-button>
+    </div>
+
+<div style="text-align: center">
+    <ul class="list">
+         <li class="list__item"ng-click="myNavigator.pushPage('new_page.html')" >
+              <span class="list__item__line-height" >new page</span>
+         </li>
+     </ul>
+    <ul class="list">
+         <li class="list__item"ng-click="myNavigator.pushPage('page2.html')" >
+              <span class="list__item__line-height" >お気に入り</span>
+         </li>
+     </ul>
+    <ul class="list">
+         <li class="list__item"ng-click="myNavigator.pushPage('page3.html')" >
+              <span class="list__item__line-height" >店舗管理</span>
+         </li>
+     </ul>     
+    <ul class="list">
+         <li class="list__item"ng-click="myNavigator.pushPage('page4.html')" >
+              <span class="list__item__line-height" >設定</span>
+         </li>
+     </ul>   
+  </div>
